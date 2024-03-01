@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 150vh;
+            overflow-x: hidden;
+            background-image: url('Images/Gradient.jpg'); /* This combines one of the parallax-box elements with body, neato :D */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .Text {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .slide-in {
+            overflow: hidden;
+            position: relative;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .parallax-box {
+            position: relative;
+            height: 50vh;
+            overflow: hidden;
+        }
+
+        .parallax-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+
+        .white-box {
+            width: calc(100% - 150px); /* Edge cut off value, 100% meaning the full value, in this case, is 150px */
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.7); /* White background with some transparency */
+            border-radius: 15px;
+            color: black;
+        }
+
+        /* Optional: Add some styles to the content inside the white box */
+        .white-box-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parallax-box">
+    <div class="parallax-content"></div>
+</div>
+
+<div class="Text slide-in white-box">
+    <div class="white-box-content">
+        <h1>Hello!</h1>
+        <br>
+        <h2><i>Who am I?</i></h2>
+        <p>My name is Sandis, I'm a second course student at <a href="https://ovt.lv">OT (Ogres Tehnikums)</a> currently learning the profession of a computer system technician.</p>
+        <br>
+        <h2><i>What're some of my hobbies/interests?</i></h2>
+        <p>- Working out</p>
+        <p>- Cars, motorsports included. This car <a href="http://tinyurl.com/yaenajrj" target="_blank">here</a> is my favorite!</p>
+        <p>- Games, like <a href="index2.html" target="_blank">these!</a></p>
+        <p>- I. T. related things, specifically programming, insane how much you can do with it :O</p>
+    </div>
+</div>
+
+</body>
+</html>

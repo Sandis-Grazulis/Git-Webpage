@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Parallax Scrolling</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 200vh; /* Set a tall height to allow scrolling */
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    .parallax-container {
+      position: relative;
+      height: 50vh; /* Set the height of the parallax container */
+      background-image: url('Images/@Celest.png'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    .parallax-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    /* Adjust the following rule to control the parallax effect */
+    .parallax-container {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .black-box {
+      align-self: center;
+      background-color: black;
+      padding: 200px;
+      border-radius: 10px;
+      display: inline-block;
+      color: black;
+    }
+
+    .Text { /*provides the text font*/
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .Picture_Align { /*aligns the picture to be in the center*/
+            text-align: center;
+        }
+        .Table_Text { /*provides the text size for the game names*/
+            font-size: 30px;
+            color: #ffffff;
+        }
+        .content  { /*also helps align the pictures to be in the center, i know i have 2 different thingies, i suck at this*/ 
+        max-width: 960px;
+        margin-bottom: 30px;
+        }
+  </style>
+</head>
+<body>
+
+<div class="parallax-container">
+  <div class="parallax-content">
+    
+  </div>
+</div>
+
+<!-- Additional content below the parallax section -->
+<div class="black-box text_format">
+  <h6 class="Text" style="margin-left: 400px; color: #ffffff; position: relative; top: -100px;">psst... you can click on em to view their respective game pages :></h6>
+
+  <div style="position: relative; top: -100px;">
+      <table style="width: 100%;" class="Table_Text Text content"> 
+          <tr>
+              <th>ULTRAKILL</th>
+              <th>Ready or not</th>
+              <th>Gran Turismo 4</th>
+          </tr>
+
+          <tr class="content">
+              <td class="Picture_Align"> <a href="https://newblood.games/"><img src="Images/R.jpg" alt="Picture of ULTRAKILL poster" width="350px"></a></td>
+              <td class="Picture_Align"> <a href="https://voidinteractive.net/"><img src="Images/9zlmkrrizar21.jpg" alt="Picture of Ready or not game" width="370px"></a></td>
+              <td class="Picture_Align"> <a href="https://www.gran-turismo.com/us/"><img src="Images/R (1).jpg" alt="Picture of GT4 cover" width="372px"></a></td>
+          </tr>
+      </table>
+  </div>
+
+  <div style="position: relative; top: -75px;">
+      <table style="width: 100%;" class="Table_Text Text content"> 
+          <tr>
+              <th>Beat Saber</th> 
+              <th>Team Fortress 2</th> 
+              <th>DiRT Rally 2.0</th>
+          </tr> 
+
+          <tr class="content">
+              <td class="Picture_Align"> <a href="https://www.beatsaber.com/"><img src="Images/beat-saber-poster.png" alt="Picture of a Beat Saber poster" width="350px"></a></td>
+              <td class="Picture_Align"> <a href="https://www.teamfortress.com/"><img src="Images/R (2).jpg" alt="Picture of the Soldier from TF2 tellling you to kick someone in the nuts" width="392px"></a></td>
+              <td class="Picture_Align"> <a href="https://dirtrally2.dirtgame.com/"><img src="Images/200324030959320239.jpg" alt="Covert art of DiRT Rally 2.0" width="365px"></a></td>
+          </tr>
+      </table>
+  </div>
+</div>
+
+
+
+</body>
+</html>

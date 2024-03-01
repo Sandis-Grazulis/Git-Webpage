@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .Text { /*provides the text font*/
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .Picture_Align { /*aligns the picture to be in the center*/
+            text-align: center; vertical-align: middle;
+        }
+        .Table_Text { /*provides the text size for the game names*/
+            font-size: 30px;
+        }
+        .content    { /*also helps align the pictures to be in the center, i know i have 2 different thingies, i suck at this*/ 
+        max-width: 960px;
+        margin-left: 200px;
+
+        animation: slideIn 2s ease-in-out 0.5s alternate;
+    }
+    @keyframes slideIn{
+
+        from {
+            transform: translateX(-100%)
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+ 
+
+    </style>
+    
+    <div class="content"> 
+    <p style="margin-left: 310px; font-style: italic; font-size: 40px;" class="Text">So, what games do I like?</p>
+    <h6 class="Text" style="margin-left: 400px;">psst... you can click on em to view their wikipedia pages :></h6>    
+    <br>
+    <table style="width: 100%;" class="Table_Text Text"> 
+    <tr>
+    <th>ULTRAKILL</th>
+    <th>Ready or not</th>
+    <th>Gran Turismo 4</th>
+    </tr>
+
+    <tr>
+        <td class="Picture_Align"> <a href="https://en.wikipedia.org/wiki/Ultrakill"><img src="Images/R.jpg" alt="Picture of ULTRAKILL poster" width="350px"></td></a>
+        <td class="Picture_Align"> <a href="https://en.wikipedia.org/wiki/Ready_or_Not_(video_game)"><img src="Images/9zlmkrrizar21.jpg" alt="Picture of Ready or not game" width="370px"></a></td>
+        <td class="Picture_Align"> <a href="https://en.wikipedia.org/wiki/Gran_Turismo_4"><img src="Images/R (1).jpg" alt="Picture of GT4 cover" width="372px"></a></td>
+    </tr>
+   </table> 
+   
+   <table style="width: 100%;" class="Table_Text Text"> 
+    <tr>
+    <th>Beat Saber</th> 
+    <th>Team Fortress 2</th> 
+    <th>DiRT Rally 2.0</th>
+    </tr> 
+
+    <tr>
+        <td class="Picture_Align"> <a href="https://en.wikipedia.org/wiki/Beat_Saber"><img src="Images/beat-saber-poster.png" alt="Picture of a Beat Saber poster" width="350px"></a></td>
+        <td class="Picture_Align"> <a href="https://en.wikipedia.org/wiki/Team_Fortress_2"><img src="Images/R (2).jpg" alt="Picture of the Soldier from TF2 tellling you to kick someone in the nuts" width="392px"></a></td>
+        <td class="Picture_Align"> <a href="https://en.wikipedia.org/wiki/Dirt_Rally_2.0"><img src="Images/200324030959320239.jpg" alt="Covert art of DiRT Rally 2.0" width="365px"></a></td>
+    </tr>
+   </table> 
+
+</div> 
+
+</body>
+</html>
